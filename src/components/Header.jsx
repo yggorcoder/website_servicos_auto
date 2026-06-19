@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-graphite-border/60 bg-graphite/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <a href="#" className="group flex shrink-0 items-center" aria-label="Lapa Customs - Página inicial">
+        <a href="#inicio" className="group flex shrink-0 items-center" aria-label="Lapa Customs - Página inicial">
           <img
             src={logo}
             alt="Lapa Customs - Customização e Acessórios Automotivos em João Pessoa"

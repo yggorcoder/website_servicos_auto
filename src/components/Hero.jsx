@@ -15,8 +15,7 @@ export default function Hero() {
           className="h-full w-full object-cover"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-graphite/90 via-graphite/75 to-graphite" />
-        <div className="absolute inset-0 bg-gradient-to-r from-graphite/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-graphite/95 via-graphite/85 to-graphite/40" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
@@ -28,18 +27,23 @@ export default function Hero() {
 
           <h1
             id="hero-title"
-            className="text-balance text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl"
+            className="flex max-w-xl flex-col gap-3 drop-shadow-lg"
           >
-            <span className="bg-gradient-to-r from-accent via-accent-shine to-white bg-clip-text text-transparent">
-              Fumês, PPFs, Envelopamento
+            <span className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
+              Lapa Customs
             </span>
-            , Estética Premium e Acessórios Automotivos
+            <span className="text-balance text-lg font-semibold leading-snug text-white sm:text-xl md:text-2xl">
+              <span className="bg-gradient-to-r from-accent via-accent-shine to-accent-shine bg-clip-text text-transparent">
+                Fumês, PPFs, Envelopamento
+              </span>
+              {" "}
+              e Estética Premium e Acessórios Automotivos
+            </span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-text-muted sm:text-lg md:text-xl">
-            Transformamos seu veículo com customização estética, acessórios premium e
-            upgrades de performance. Cada projeto é único — feito com paixão, técnica e
-            atendimento exclusivo em João Pessoa.
+          <p className="mt-5 max-w-lg text-sm leading-relaxed text-text-muted sm:text-base md:text-lg">
+            Proteja, personalize e valorize seu veículo com acabamento premium e
+            atendimento exclusivo.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">

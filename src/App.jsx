@@ -5,10 +5,12 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import StructuredData from "./components/StructuredData";
 
 export default function App() {
   return (
     <>
+      <StructuredData />
       <Header />
       <main>
         <Hero />
