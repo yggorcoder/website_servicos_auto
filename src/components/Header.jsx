@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { getWhatsAppUrl } from "../constants/whatsapp";
+import { getWhatsAppUrl, trackWhatsAppClick } from "../constants/whatsapp";
 
 const navLinks = [
   { href: "#servicos", label: "Serviços" },
@@ -40,6 +40,7 @@ export default function Header() {
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppClick}
             className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/20 active:scale-95"
           >
             Fale com um Especialista
@@ -80,7 +81,10 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 block rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-accent-hover active:scale-95"
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  trackWhatsAppClick();
+                  setOpen(false);
+                }}
               >
                 Fale com um Especialista
               </a>

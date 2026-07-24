@@ -1,5 +1,5 @@
 import { MessageCircle, Phone } from "lucide-react";
-import { getWhatsAppUrl } from "../constants/whatsapp";
+import { getWhatsAppUrl, trackWhatsAppClick } from "../constants/whatsapp";
 
 export default function Contact() {
   return (
@@ -40,6 +40,7 @@ export default function Contact() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
                 className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-whatsapp px-8 py-4 text-base font-bold text-white shadow-lg shadow-whatsapp/25 transition-all hover:bg-whatsapp-hover hover:shadow-whatsapp/40 active:scale-95"
               >
                 <MessageCircle size={22} aria-hidden="true" />

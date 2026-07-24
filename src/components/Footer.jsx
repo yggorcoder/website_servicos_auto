@@ -1,7 +1,7 @@
 import { Instagram, MapPin, Phone } from "lucide-react";
 import { FULL_ADDRESS } from "../constants/location";
 import { INSTAGRAM_URL, PHONE_DISPLAY } from "../constants/site";
-import { getWhatsAppUrl } from "../constants/whatsapp";
+import { getWhatsAppUrl, trackWhatsAppClick } from "../constants/whatsapp";
 
 const quickLinks = [
   { href: "#inicio", label: "Início" },
@@ -37,6 +37,7 @@ export default function Footer() {
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={trackWhatsAppClick}
                   className="text-text-muted transition-colors hover:text-accent"
                 >
                   {PHONE_DISPLAY}

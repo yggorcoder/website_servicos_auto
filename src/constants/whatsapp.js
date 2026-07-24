@@ -6,3 +6,10 @@ export const WHATSAPP_MESSAGE =
 
 export const getWhatsAppUrl = (message = WHATSAPP_MESSAGE) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+/** Dispara o evento de Contato do Meta Pixel ao clicar em links de WhatsApp. */
+export function trackWhatsAppClick() {
+  if (typeof window !== "undefined" && typeof window.fbq === "function") {
+    window.fbq("track", "Contato");
+  }
+}

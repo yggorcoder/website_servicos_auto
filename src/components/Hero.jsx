@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
-import { getWhatsAppUrl } from "../constants/whatsapp";
+import { getWhatsAppUrl, trackWhatsAppClick } from "../constants/whatsapp";
 
 export default function Hero() {
   return (
@@ -51,6 +51,7 @@ export default function Hero() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-base font-bold text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-hover hover:shadow-accent/40 active:scale-95"
             >
               Fale com um Especialista

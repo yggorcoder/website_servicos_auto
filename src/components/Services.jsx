@@ -12,7 +12,7 @@ import {
   Wind,
   Zap,
 } from "lucide-react";
-import { getWhatsAppUrl } from "../constants/whatsapp";
+import { getWhatsAppUrl, trackWhatsAppClick } from "../constants/whatsapp";
 
 const mainServices = [
   {
@@ -162,6 +162,7 @@ function ServiceCard({ service }) {
           )}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackWhatsAppClick}
           className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
         >
           Solicitar Orçamento
@@ -195,6 +196,7 @@ function DetailingCard({ service }) {
           )}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackWhatsAppClick}
           className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-accent transition-colors hover:text-accent-hover sm:text-sm"
         >
           Solicitar Orçamento
