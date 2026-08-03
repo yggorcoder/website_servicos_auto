@@ -12,7 +12,7 @@ import {
   Wind,
   Zap,
 } from "lucide-react";
-import { getWhatsAppUrl, trackWhatsAppClick } from "../constants/whatsapp";
+import { getWhatsAppUrl, trackWhatsAppClick, WHATSAPP_NUMBER_DETAILING } from "../constants/whatsapp";
 
 const mainServices = [
   {
@@ -192,7 +192,8 @@ function DetailingCard({ service }) {
         </p>
         <a
           href={getWhatsAppUrl(
-            `Olá! Vi o site da Lapa Customs e gostaria de solicitar um orçamento para: ${service.title}.`
+            `Olá! Vi o site da Lapa Customs e gostaria de solicitar um orçamento para: ${service.title}.`,
+            WHATSAPP_NUMBER_DETAILING
           )}
           target="_blank"
           rel="noopener noreferrer"
